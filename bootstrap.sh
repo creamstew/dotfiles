@@ -41,7 +41,6 @@ formulas=(
   procs
   openssl
   vim
-  1password
 )
 
 echo "brew tap"
@@ -75,6 +74,7 @@ casks=(
     spotify
     visual-studio-code
     zoom
+    1password
 )
 
 echo "brew casks"
