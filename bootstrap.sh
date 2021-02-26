@@ -93,5 +93,3 @@ ln -s $SCRIPT_DIR/.gitconfig $HOME/.gitconfig
 ln -s $SCRIPT_DIR/.git_commit_message $HOME/.git_commit_message
 ln -s $SCRIPT_DIR/.ignore $HOME/.ignore
 git config --global commit.template $HOME/.git_commit_message
-ln -s $SCRIPT_DIR/vscode/keybindings.json ~/Library/Application\ Support/Code/User/
-ln -s $SCRIPT_DIR/vscode/settings.json ~/Library/Application\ Support/Code/User/
