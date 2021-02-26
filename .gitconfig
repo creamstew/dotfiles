@@ -1,0 +1,27 @@
+[include]
+	path = ~/.gitconfig.local
+[ghq]
+	root = ~/Develop/repositories/src
+[status]
+	showUntrackedFiles = all
+[core]
+	filemode = false
+	ignorecase = false
+	quotepath = false
+	precomposeunicode = true
+	excludesfile = ~/.gitignore.global
+[color]
+	# colorの設定(以下のコマンドは自動で色つける)
+	ui = true
+	diff = auto
+	status = auto
+	branch = auto
+	grep = auto
+	interactive = auto
+[merge]
+	conflictStyle = diff3 # マーカ
+[commit]
+	template = ~/.git_commit_message # コミットメッセージのテンプレート設定
+	gpgsign = true # gpg署名付きを有効
+[gpg]
+	program = gpg # gpg署名付き
