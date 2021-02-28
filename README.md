@@ -1,4 +1,5 @@
 ### SSH設定
+GitHubからdotfilesをZIP形式でダウンロードする
 ```
 $ make set_ssh_config
 ```
