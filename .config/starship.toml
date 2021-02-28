@@ -1,0 +1,9 @@
+# starship設定
+add_newline = false
+
+[directory]
+truncation_length = 0
+truncate_to_repo = false
+
+[time]
+disabled = false

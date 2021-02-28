@@ -96,3 +96,4 @@ git config --global commit.template $HOME/.git_commit_message
 # iterm2の設定を共有
 rm ~/Library/Preferences/com.googlecode.iterm2.plist
 ln -s $SCRIPT_DIR/iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
+ln -fs $SCRIPT_DIR/dotfiles/starship.toml $HOME/.config/starship.toml"

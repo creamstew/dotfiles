@@ -59,6 +59,9 @@ if [ $( ps -ef | grep ssh-agent | grep -v grep | wc -l ) -eq 0 ]; then
 fi
 ssh-add ~/.ssh/id_rsa
 
+# starship
+eval "$(starship init zsh)"
+
 # rbenv
 export PATH=$PATH:$HOME/.rbenv/bin
 eval "$(rbenv init -)"
