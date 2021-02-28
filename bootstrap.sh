@@ -97,7 +97,3 @@ ln -s $SCRIPT_DIR/.git_commit_message $HOME/.git_commit_message
 ln -s $SCRIPT_DIR/.ignore $HOME/.ignore
 git config --global commit.template $HOME/.git_commit_message
 ln -fs $SCRIPT_DIR/dotfiles/starship.toml $HOME/.config/starship.toml
-# iterm2の設定を共有
-rm ~/Library/Preferences/com.googlecode.iterm2.plist
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm2"
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true

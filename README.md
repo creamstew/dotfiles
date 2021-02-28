@@ -21,6 +21,13 @@ $ pbcopy < ~/.ssh/github.pub
 $ make bootstrap.sh
 ```
 
+### iterm2 設定
+```
+rm ~/Library/Preferences/com.googlecode.iterm2.plist
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm2"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+```
+
 ### 最初にやること
 #### ソフトウェア・アップデート
 (appleマーク) > このmacについて > ソフトウェアアップデート
