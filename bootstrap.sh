@@ -89,13 +89,15 @@ brew cleanup
 echo "brew installed"
 
 ln -s $SCRIPT_DIR/.zshrc $HOME/.zshrc
+ln -s $SCRIPT_DIR/.zprofile $HOME/.zprofile
 ln -s $SCRIPT_DIR/.zlogout $HOME/.zlogout
 ln -s $SCRIPT_DIR/.tmux.conf $HOME/.tmux.conf
 ln -s $SCRIPT_DIR/.gitconfig $HOME/.gitconfig
 ln -s $SCRIPT_DIR/.git_commit_message $HOME/.git_commit_message
 ln -s $SCRIPT_DIR/.ignore $HOME/.ignore
 git config --global commit.template $HOME/.git_commit_message
+ln -fs $SCRIPT_DIR/dotfiles/starship.toml $HOME/.config/starship.toml
 # iterm2の設定を共有
 rm ~/Library/Preferences/com.googlecode.iterm2.plist
-ln -s $SCRIPT_DIR/iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
-ln -fs $SCRIPT_DIR/dotfiles/starship.toml $HOME/.config/starship.toml
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm2"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
