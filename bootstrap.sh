@@ -41,6 +41,8 @@ formulas=(
   procs
   openssl
   vim
+  rbenv
+  nodenv
 )
 
 echo "brew tap"

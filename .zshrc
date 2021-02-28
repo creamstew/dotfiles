@@ -57,17 +57,9 @@ if [ $( ps -ef | grep ssh-agent | grep -v grep | wc -l ) -eq 0 ]; then
     ssh-agent -t $SSH_KEY_LIFE_TIME_SEC > $SSH_AGENT_FILE
     source $SSH_AGENT_FILE > /dev/null 2>&1
 fi
-ssh-add ~/.ssh/id_rsa
 
 # starship
 eval "$(starship init zsh)"
-
-# rbenv
-export PATH=$PATH:$HOME/.rbenv/bin
-eval "$(rbenv init -)"
-
-# nodenv
-eval "$(nodenv init -)"
 
 # ruby
 export RUBOCOP_OPTS='-D -E -S'
